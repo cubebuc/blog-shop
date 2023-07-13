@@ -1,22 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import MainLayout from '../layouts/MainLayout';
+import PostPreview from '../components/PostPreview';
 import Stack from 'react-bootstrap/Stack';
-import Container from 'react-bootstrap/Container';
 
 function BlogPage()
 {
+    //Set the post count - POSTS MUST BE NAMED post#.md
+    const postCount = 2;
+    const posts = Array.from(Array(postCount).keys()).map(i => `post${i + 1}.md`);
+
     return (
         <MainLayout>
-            <h1 className='mb-4'>Blog</h1>
             <Stack gap={3}>
-                <Container className='bg-primary-subtle rounded p-3'>
-                    <h2>First</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta laudantium, ad natus rerum nesciunt quaerat nisi ab molestias assumenda distinctio repellendus quos ducimus perspiciatis autem nam, nobis hic labore veritatis error cumque at officiis! Perspiciatis consectetur nihil soluta! Fugiat dolore repudiandae id nisi asperiores alias optio nemo in rem cum.</p>
-                </Container>
-                <Container className='bg-primary-subtle rounded p-3'>
-                    <h2>Second</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta laudantium, ad natus rerum nesciunt quaerat nisi ab molestias assumenda distinctio repellendus quos ducimus perspiciatis autem nam, nobis hic labore veritatis error cumque at officiis! Perspiciatis consectetur nihil soluta! Fugiat dolore repudiandae id nisi asperiores alias optio nemo in rem cum.</p>
-                </Container>
+                {posts.map((post, i) => <PostPreview key={i} fileName={post} />)}
             </Stack>
         </MainLayout>
     );
