@@ -11,24 +11,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import BlogPage from './pages/BlogPage';
 import PostPage from './pages/PostPage';
+import ShopPage from './pages/ShopPage';
 
 const router = createBrowserRouter([
     {
-        path: "/",
-        element: <App />,
+        path: '/',
+        element: <App />
     },
     {
-        path: "/blog",
-        element: <BlogPage />,
-    }
-    //Add routes for all the post pages programmatically
-    ,
+        path: '/blog',
+        element: <BlogPage />
+    },
     ...Array.from(Array(2).keys()).map(i => (
         {
             path: `/blog/post${i + 1}`,
-            element: <PostPage fileName={`post${i + 1}.md`} />,
+            element: <PostPage fileName={`post${i + 1}.md`} />
         }
-    ))
+    )),
+    {
+        path: '/shop',
+        element: <ShopPage />
+    }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

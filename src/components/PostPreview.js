@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
-import Container from 'react-bootstrap/Container';
 import ReactLink from 'react-bootstrap/NavLink';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +18,7 @@ function PostPreview({ fileName })
                     .catch(err => console.error(err));
             })
             .catch(err => console.error(err));
-    }, []);
+    }, [fileName]);
 
     return (
         <ReactLink className='bg-info-subtle rounded p-3' as={Link} to={`/blog/${fileName.substring(0, fileName.length - 3)}`}>

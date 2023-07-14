@@ -7,6 +7,7 @@ import Collapse from 'react-bootstrap/NavbarCollapse';
 import ReactLink from 'react-bootstrap/NavLink';
 import { Link } from 'react-router-dom';
 
+import CartButton from './CartButton';
 import DarkMode from './DarkMode';
 
 function Navbar()
@@ -20,7 +21,9 @@ function Navbar()
                     <Nav className="me-auto">
                         <ReactLink as={Link} to="/">Home</ReactLink>
                         <ReactLink as={Link} to="/blog">Blog</ReactLink>
+                        <ReactLink as={Link} to="/shop">Shop</ReactLink>
                     </Nav>
+                    <CartButton />
                     <DarkMode />
                 </Collapse>
             </Container>
