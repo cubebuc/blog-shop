@@ -35,7 +35,7 @@ function ShopPage()
                 ))}
             </Row>
 
-            <ToastContainer position="top-end" className="mt-5 p-3 position-fixed">
+            <ToastContainer position="top-end" className="mt-5 p-3 position-fixed" style={{ zIndex: 10 }}>
                 {notifications.map((notification, index) => (
                     <CartToast key={index} item={notification} />
                 ))}

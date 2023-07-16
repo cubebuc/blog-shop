@@ -44,7 +44,7 @@ function CartPreview()
     }
 
     return (
-        <div className='m-1'>
+        <div className='m-1' style={{ zIndex: 100 }}>
             <Container className='border rounded-3 p-2 ps-3 pe-4 mb-3'>
                 <Row>
                     <Col xs={3}>
