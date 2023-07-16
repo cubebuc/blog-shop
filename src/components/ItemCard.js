@@ -3,19 +3,7 @@ import Stack from 'react-bootstrap/Stack';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-function onAddToCart(item)
-{
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    let existingItem = cart.find(i => i.id === item.id);
-    if (existingItem)
-        existingItem.quantity++;
-    else
-        cart.push({ ...item, quantity: 1 });
-
-    localStorage.setItem('cart', JSON.stringify(cart));
-}
-
-function ItemCard({ item })
+function ItemCard({ item, onAddToCart })
 {
     return (
         <Card style={{ width: '18rem' }} className="mb-4">

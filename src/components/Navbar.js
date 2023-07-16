@@ -13,7 +13,7 @@ import DarkMode from './DarkMode';
 function Navbar()
 {
     return (
-        <ReactNavbar expand="lg" className="bg-body-tertiary">
+        <ReactNavbar expand="lg" sticky='top' className="bg-body-tertiary">
             <Container>
                 <Brand as={Link} to="/">React Bootstrap</Brand>
                 <Toggle aria-controls="basic-navbar-nav" />
