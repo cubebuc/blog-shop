@@ -12,6 +12,7 @@ import App from './App';
 import BlogPage from './pages/BlogPage';
 import PostPage from './pages/PostPage';
 import ShopPage from './pages/ShopPage';
+import CheckoutPage from './pages/CheckoutPage';
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
     {
         path: '/shop',
         element: <ShopPage />
+    },
+    {
+        path: '/checkout',
+        element: <CheckoutPage />
     }
 ]);
 

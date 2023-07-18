@@ -35,7 +35,7 @@ function CartItem({ item, onDecrementQuantity, onIncrementQuantity })
                 </Ratio>
             </Col>
             <Col xs={9} className='px-3'>
-                <Row className='mb-2'>
+                <Row className='mb-2 ps-2'>
                     <Col xs={6}>
                         <b>{item.name}</b>
                     </Col>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Ratio from 'react-bootstrap/Ratio';
 import Button from 'react-bootstrap/Button';
 
 import CartItem from './CartItem';
@@ -47,11 +47,14 @@ function CartPreview()
         <div className='m-1' style={{ zIndex: 100 }}>
             <Container className='border rounded-3 p-2 ps-3 pe-4 mb-3'>
                 <Row>
-                    <Col xs={3}>
+                    <Col xs={6} className='my-auto'>
                         <b>Total:</b>
                     </Col>
-                    <Col xs={9} className='text-end'>
+                    <Col xs={2} className='text-end my-auto me-1'>
                         <b>${total}</b>
+                    </Col>
+                    <Col xs={1} className='text-end'>
+                        <Button variant='primary' size='sm' style={{ width: '6rem' }} as={Link} to='/checkout'>Checkout</Button>
                     </Col>
                 </Row>
             </Container>
