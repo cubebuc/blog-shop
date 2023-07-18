@@ -54,7 +54,7 @@ function CartPreview()
                         <b>${total}</b>
                     </Col>
                     <Col xs={1} className='text-end'>
-                        <Button variant='primary' size='sm' style={{ width: '6rem' }} as={Link} to='/checkout'>Checkout</Button>
+                        <Button variant='primary' size='sm' style={{ width: '6rem' }} as={Link} to='/blog-shop/checkout'>Checkout</Button>
                     </Col>
                 </Row>
             </Container>

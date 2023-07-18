@@ -21,7 +21,7 @@ function PostPreview({ fileName })
     }, [fileName]);
 
     return (
-        <ReactLink className='bg-info-subtle rounded p-3' as={Link} to={`/blog/${fileName.substring(0, fileName.length - 3)}`}>
+        <ReactLink className='bg-info-subtle rounded p-3' as={Link} to={`/blog-shop/blog/${fileName.substring(0, fileName.length - 3)}`}>
             <Markdown>{post.substring(0, 100) + '...'}</Markdown>
         </ReactLink>
     );

@@ -16,25 +16,25 @@ import CheckoutPage from './pages/CheckoutPage';
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: 'blog-shop/',
         element: <App />
     },
     {
-        path: '/blog',
+        path: 'blog-shop/blog',
         element: <BlogPage />
     },
     ...Array.from(Array(2).keys()).map(i => (
         {
-            path: `/blog/post${i + 1}`,
+            path: `blog-shop/blog/post${i + 1}`,
             element: <PostPage fileName={`post${i + 1}.md`} />
         }
     )),
     {
-        path: '/shop',
+        path: 'blog-shop/shop',
         element: <ShopPage />
     },
     {
-        path: '/checkout',
+        path: 'blog-shop/checkout',
         element: <CheckoutPage />
     }
 ]);
