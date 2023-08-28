@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
 import MainLayout from '../layouts/MainLayout';
+import rehypeRaw from 'rehype-raw';
 
 function PostPage({ fileName })
 {
@@ -21,7 +22,7 @@ function PostPage({ fileName })
 
     return (
         <MainLayout>
-            <Markdown>{post}</Markdown>
+            <Markdown rehypePlugins={[rehypeRaw]}>{post}</Markdown>
         </MainLayout>
     );
 }

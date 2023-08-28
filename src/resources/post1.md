@@ -1,21 +1,13 @@
-# A Day in the Life of a Developer
+# Nazev
 
-## Introduction
+## Popis
 
-This is a blog post about a day in the life of a developer.
+lsj
 
-## Body
+## Ingriedinece
 
-This is the body of the blog post.
+1. ingredience 1
+2. ingredience 2
+3. ingredience 3
 
-## Conclusion
-
-This is the conclusion of the blog post.
-
-## References
-
-This is a reference.
-
-## Image
-
-![Image](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+<iframe width="1264" height="711" src="https://www.youtube.com/embed/ZFBUFFr4GmQ" title="Games that Make You Part of the Ecosystem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
