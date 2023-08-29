@@ -3,7 +3,7 @@ import Markdown from 'react-markdown';
 import MainLayout from '../layouts/MainLayout';
 import rehypeRaw from 'rehype-raw';
 
-function PostPage({ fileName })
+function RecipePage({ fileName })
 {
     const [recipe, setRecipe] = useState('Loading...');
 
@@ -27,4 +27,4 @@ function PostPage({ fileName })
     );
 }
 
-export default PostPage;
+export default RecipePage;

@@ -9,8 +9,8 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
-import BlogPage from './pages/BlogPage';
-import PostPage from './pages/PostPage';
+import RecipesPage from './pages/RecipesPage';
+import RecipePage from './pages/RecipePage';
 import ShopPage from './pages/ShopPage';
 import CheckoutPage from './pages/CheckoutPage';
 
@@ -21,12 +21,12 @@ const router = createBrowserRouter([
     },
     {
         path: 'blog-shop/recipes',
-        element: <BlogPage />
+        element: <RecipesPage />
     },
-    ...Array.from(Array(1).keys()).map(i => (
+    ...Array.from(Array(2).keys()).map(i => (
         {
-            path: `blog-shop/recipes/post${i + 1}`,
-            element: <PostPage fileName={`post${i + 1}.md`} />
+            path: `blog-shop/recipes/recipe${i + 1}`,
+            element: <RecipePage fileName={`recipe${i + 1}.md`} />
         }
     )),
     {

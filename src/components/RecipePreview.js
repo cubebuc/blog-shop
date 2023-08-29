@@ -3,7 +3,7 @@ import Markdown from 'react-markdown';
 import ReactLink from 'react-bootstrap/NavLink';
 import { Link } from 'react-router-dom';
 
-function PostPreview({ fileName })
+function RecipePreview({ fileName })
 {
     const [recipe, setRecipe] = useState('Loading...');
 
@@ -27,4 +27,4 @@ function PostPreview({ fileName })
     );
 }
 
-export default PostPreview;
+export default RecipePreview;
