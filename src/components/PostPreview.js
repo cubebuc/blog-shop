@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function PostPreview({ fileName })
 {
-    const [post, setPost] = useState('Loading...');
+    const [recipe, setRecipe] = useState('Loading...');
 
     useEffect(() =>
     {
@@ -14,15 +14,15 @@ function PostPreview({ fileName })
             {
                 fetch(res.default)
                     .then(res => res.text())
-                    .then(res => setPost(res))
+                    .then(res => setRecipe(res))
                     .catch(err => console.error(err));
             })
             .catch(err => console.error(err));
     }, [fileName]);
 
     return (
-        <ReactLink className='bg-info-subtle rounded p-3' as={Link} to={`/blog-shop/blog/${fileName.substring(0, fileName.length - 3)}`}>
-            <Markdown>{post.substring(0, 100) + '...'}</Markdown>
+        <ReactLink className='bg-info-subtle rounded p-3' as={Link} to={`/blog-shop/recipes/${fileName.substring(0, fileName.length - 3)}`}>
+            <Markdown>{recipe.substring(0, 100) + '...'}</Markdown>
         </ReactLink>
     );
 }

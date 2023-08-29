@@ -6,16 +6,16 @@ import Stack from 'react-bootstrap/Stack';
 function BlogPage()
 {
     //Set the post count - POSTS MUST BE NAMED post#.md
-    const postCount = 2;
-    const posts = Array.from(Array(postCount).keys()).map(i => `post${i + 1}.md`);
+    const recipeCount = 1;
+    const recipes = Array.from(Array(recipeCount).keys()).map(i => `post${i + 1}.md`);
 
     return (
         <MainLayout>
             <Stack gap={3}>
-                {posts.map((post, i) => <PostPreview key={i} fileName={post} />)}
+                {recipes.map((recipe, i) => <PostPreview key={i} fileName={recipe} />)}
             </Stack>
         </MainLayout>
     );
 }
 
-export default BlogPage;;
+export default BlogPage;

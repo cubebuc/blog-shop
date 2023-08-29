@@ -5,7 +5,7 @@ import rehypeRaw from 'rehype-raw';
 
 function PostPage({ fileName })
 {
-    const [post, setPost] = useState('Loading...');
+    const [recipe, setRecipe] = useState('Loading...');
 
     useEffect(() =>
     {
@@ -14,7 +14,7 @@ function PostPage({ fileName })
             {
                 fetch(res.default)
                     .then(res => res.text())
-                    .then(res => setPost(res))
+                    .then(res => setRecipe(res))
                     .catch(err => console.error(err));
             })
             .catch(err => console.error(err));
@@ -22,7 +22,7 @@ function PostPage({ fileName })
 
     return (
         <MainLayout>
-            <Markdown rehypePlugins={[rehypeRaw]}>{post}</Markdown>
+            <Markdown rehypePlugins={[rehypeRaw]}>{recipe}</Markdown>
         </MainLayout>
     );
 }

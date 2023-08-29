@@ -20,12 +20,12 @@ const router = createBrowserRouter([
         element: <App />
     },
     {
-        path: 'blog-shop/blog',
+        path: 'blog-shop/recipes',
         element: <BlogPage />
     },
-    ...Array.from(Array(2).keys()).map(i => (
+    ...Array.from(Array(1).keys()).map(i => (
         {
-            path: `blog-shop/blog/post${i + 1}`,
+            path: `blog-shop/recipes/post${i + 1}`,
             element: <PostPage fileName={`post${i + 1}.md`} />
         }
     )),

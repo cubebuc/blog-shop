@@ -20,7 +20,7 @@ function Navbar()
                 <Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <ReactLink as={Link} to="/blog-shop">Home</ReactLink>
-                        <ReactLink as={Link} to="/blog-shop/blog">Blog</ReactLink>
+                        <ReactLink as={Link} to="/blog-shop/recipes">Recipes</ReactLink>
                         <ReactLink as={Link} to="/blog-shop/shop">Shop</ReactLink>
                     </Nav>
                     <CartButton />
