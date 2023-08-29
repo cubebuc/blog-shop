@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/blog-shop/static/css/main.3117d0b6.css",
-    "main.js": "/blog-shop/static/js/main.10dba21e.js",
-    "static/js/208.a94d679c.chunk.js": "/blog-shop/static/js/208.a94d679c.chunk.js",
-    "static/js/352.8259bfee.chunk.js": "/blog-shop/static/js/352.8259bfee.chunk.js",
-    "static/js/787.0c3f432a.chunk.js": "/blog-shop/static/js/787.0c3f432a.chunk.js",
+    "main.css": "/blog-shop/static/css/main.d8bc5815.css",
+    "main.js": "/blog-shop/static/js/main.2c16a0d2.js",
+    "static/js/788.01a2550d.chunk.js": "/blog-shop/static/js/788.01a2550d.chunk.js",
+    "static/js/634.98081b1f.chunk.js": "/blog-shop/static/js/634.98081b1f.chunk.js",
+    "static/js/27.a664394e.chunk.js": "/blog-shop/static/js/27.a664394e.chunk.js",
     "static/media/bootstrap-icons.woff?": "/blog-shop/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/bootstrap-icons.woff2?": "/blog-shop/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
     "index.html": "/blog-shop/index.html",
-    "static/media/post1.md": "/blog-shop/static/media/post1.0c2273f5ff0d59ec7256.md",
-    "static/media/post2.md": "/blog-shop/static/media/post2.0c2273f5ff0d59ec7256.md",
-    "main.3117d0b6.css.map": "/blog-shop/static/css/main.3117d0b6.css.map",
-    "main.10dba21e.js.map": "/blog-shop/static/js/main.10dba21e.js.map",
-    "787.0c3f432a.chunk.js.map": "/blog-shop/static/js/787.0c3f432a.chunk.js.map"
+    "static/media/recipe1.md": "/blog-shop/static/media/recipe1.0afd99c3052ec9fd03ac.md",
+    "static/media/recipe2.md": "/blog-shop/static/media/recipe2.0c2273f5ff0d59ec7256.md"
   },
   "entrypoints": [
-    "static/css/main.3117d0b6.css",
-    "static/js/main.10dba21e.js"
+    "static/css/main.d8bc5815.css",
+    "static/js/main.2c16a0d2.js"
   ]
 }

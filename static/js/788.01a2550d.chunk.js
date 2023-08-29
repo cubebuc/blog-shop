@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktest=self.webpackChunktest||[]).push([[788],{788:function(e,t,c){e.exports=c.p+"static/media/recipe1.0afd99c3052ec9fd03ac.md"}}]);
