@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Kuřecí maso",
+        "route": "kureci-maso",
+        "preview": "https://picsum.photos/200/300",
+        "file": "recipe1.md"
+    },
+    {
+        "title": "Květák",
+        "route": "kvetak",
+        "preview": "https://picsum.photos/200/300",
+        "file": "recipe2.md"
+    }
+]

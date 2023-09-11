@@ -1,13 +1,24 @@
-# Nazev
+# Salsa dip rajčatová pueblo
 
-## Popis
+## Ingredience
 
-lsj
+- 250 g vyzrálých rajčat
+- 250 g nasekaných rajčat z plechovky
+- 2 stroužky česneku
+- Balení čerstvého koriandru
+- 1 limetka
+- 1 žlutá cibule
+- 1 červená cibule
+- Jalapeňos (množství podle chuti)
+- 2 jarní cibulky
+- Sůl a pepř
 
-## Ingriedinece
+## Příprava
 
-1. ingredience 1
-2. ingredience 2
-3. ingredience 3
+1. Vše oloupat a nakrájet, aby se to vešlo do mixéru
 
-<iframe width="1264" height="711" src="https://www.youtube.com/embed/ZFBUFFr4GmQ" title="Games that Make You Part of the Ecosystem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+## Postup
+
+1. Cibuli, česnek a papričku rozmixuješ na hrubo
+2. Přidáš vše ostatní a rozmixuješ do požadované konzistence
+3. Dochutíš dle potřeby

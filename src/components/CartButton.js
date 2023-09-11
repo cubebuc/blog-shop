@@ -12,7 +12,7 @@ function CartButton()
     return (
         <div>
             <Button variant="primary" onClick={() => setShow(true)} className="me-4">
-                Cart <i class="bi bi-cart-fill" />
+                Cart <i className="bi bi-cart-fill" />
             </Button>
             <Offcanvas placement='end' show={show} onHide={() => setShow(false)}>
                 <Offcanvas.Header closeButton>

@@ -14,6 +14,8 @@ import RecipePage from './pages/RecipePage';
 import ShopPage from './pages/ShopPage';
 import CheckoutPage from './pages/CheckoutPage';
 
+import recipes from './resources/recipes.json';
+
 const router = createBrowserRouter([
     {
         path: 'blog-shop/',
@@ -23,10 +25,10 @@ const router = createBrowserRouter([
         path: 'blog-shop/recipes',
         element: <RecipesPage />
     },
-    ...Array.from(Array(2).keys()).map(i => (
+    ...recipes.map((recipe) => (
         {
-            path: `blog-shop/recipes/recipe${i + 1}`,
-            element: <RecipePage fileName={`recipe${i + 1}.md`} />
+            path: `blog-shop/recipes/${recipe.route}`,
+            element: <RecipePage fileName={recipe.file} />
         }
     )),
     {
