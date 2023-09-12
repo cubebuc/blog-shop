@@ -14,8 +14,7 @@ function RecipePage({ fileName })
             {
                 fetch(res.default)
                     .then(res => res.text())
-                    .then(res => setRecipe(res))
-                    .catch(err => console.error(err));
+                    .then(res => setRecipe(res));
             })
             .catch(err => console.error(err));
     }, [fileName]);
